@@ -1,0 +1,40 @@
+#!/bin/sh
+
+# 全局配置 ---  global config --------------------------start
+
+# hadoop 安装路径
+export HADOOP_HOME="/usr/local/hadoop-3.2.1"
+# 初始化CLASSPATH 一般为空就行
+export CLASSPATH=""
+# hadoop 版本
+export HADOOP_VERSION="3.2.1"
+
+# 全局配置 ---  global config --------------------------end
+
+echo 正在配置环境...
+export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH
+export CLASSPATH=$CLASSPATH:".:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar"
+export CLASSPATH=$CLASSPATH:"${HADOOP_HOME}/share/hadoop/common/hadoop-common-${HADOOP_VERSION}.jar"
+export CLASSPATH=$CLASSPATH:"${HADOOP_HOME}/share/hadoop/common/hadoop-nfs-${HADOOP_VERSION}.jar"
+
+for jar in ${HADOOP_HOME}/share/hadoop/common/lib/*.jar; do
+    export CLASSPATH=$CLASSPATH:$jar
+done
+
+for jar in ${HADOOP_HOME}/share/hadoop/hdfs/lib/*.jar; do
+    export CLASSPATH=$CLASSPATH:$jar
+done
+
+export CLASSPATH=$CLASSPATH:"${HADOOP_HOME}/share/hadoop/hdfs/haoop-hdfs-${HADOOP_VERSION}.jar"
+export CLASSPATH=$CLASSPATH:"${HADOOP_HOME}/share/hadoop/hdfs/haoop-hdfs-nfs-${HADOOP_VERSION}.jar"
+export CLASSPATH=$CLASSPATH:"${HADOOP_HOME}/share/hadoop/hdfs/hadoop-hdfs-client-${HADOOP_VERSION}.jar"
+for jar in ${HADOOP_HOME}/share/hadoop/mapreduce/*.jar; do
+    export CLASSPATH=$CLASSPATH:$jar
+done
+# echo $CLASSPATH
+echo 配置环境完成!
+echo 正在编译java程序...
+javac $1".java"
+echo 编译java程序完成!
+echo 启动java程序...
+java $1

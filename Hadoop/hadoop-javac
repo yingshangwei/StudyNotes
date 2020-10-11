@@ -1,6 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 # 全局配置 ---  global config --------------------------start
+
+# 是否导入hadoop的jar包
+IF_USE_HADOOP=false
+# 是否导入hbase的jar包
+IF_USE_HBASE=true
 
 # hadoop 安装路径
 export HADOOP_HOME="/usr/local/hadoop-3.2.1"
@@ -9,9 +14,15 @@ export CLASSPATH=""
 # hadoop 版本
 export HADOOP_VERSION="3.2.1"
 
+# hbase 安装路径
+export HBASE_HOME="/usr/local/hbase"
+
 # 全局配置 ---  global config --------------------------end
 
-echo 正在配置环境...
+# echo $IF_USE_HADOOP
+if [[ $IF_USE_HADOOP == true ]];
+then
+echo 正在配置HADOOP...
 export CLASSPATH=$($HADOOP_HOME/bin/hadoop classpath):$CLASSPATH
 export CLASSPATH=$CLASSPATH:".:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar"
 export CLASSPATH=$CLASSPATH:"${HADOOP_HOME}/share/hadoop/common/hadoop-common-${HADOOP_VERSION}.jar"
@@ -31,6 +42,28 @@ export CLASSPATH=$CLASSPATH:"${HADOOP_HOME}/share/hadoop/hdfs/hadoop-hdfs-client
 for jar in ${HADOOP_HOME}/share/hadoop/mapreduce/*.jar; do
     export CLASSPATH=$CLASSPATH:$jar
 done
+else 
+    echo IF_USE_HADOOP=false
+fi
+
+if [[ $IF_USE_HBASE = true ]];
+then
+echo 正在配置HBASE...
+for jar in ${HBASE_HOME}/lib/*.jar; do
+    export CLASSPATH=$CLASSPATH:$jar
+done
+for jar in ${HBASE_HOME}/lib/client-facing-thirdparty/*.jar; do
+    export CLASSPATH=$CLASSPATH:$jar
+done
+for jar in ${HBASE_HOME}/lib/shaded-clients/*.jar; do
+    export CLASSPATH=$CLASSPATH:$jar
+done
+for jar in ${HBASE_HOME}/lib/jdk11/*.jar; do
+    export CLASSPATH=$CLASSPATH:$jar
+done
+else 
+    echo IF_USE_HBASE=false
+fi
 # echo $CLASSPATH
 echo 配置环境完成!
 echo 正在编译java程序...

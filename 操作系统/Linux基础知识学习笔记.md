@@ -54,8 +54,14 @@ ll == ls -l  在ubuntu18.04中实测不太一样
 
 ![image-20201012203742097](../datas/images/image-20201012203742097.png)
 
+![image-20201019160442375](../datas/images/image-20201019160442375.png)
+
 ![image-20201012234149317](../datas/images/image-20201012234149317.png)
 
 ![image-20201015103308095](../datas/images/image-20201015103308095.png)
 
 ![image-20201015103339872](../datas/images/image-20201015103339872.png)
+
+![image-20201019153743707](../datas/images/image-20201019153743707.png)
+
+![image-20201019153555575](../datas/images/image-20201019153555575.png)

@@ -107,6 +107,7 @@ public:
         mysockaddr.sin_family = AF_INET;//set 
         mysockaddr.sin_addr.s_addr = htonl(INADDR_ANY);//set in ip
         mysockaddr.sin_port = htons(server_ip_port);//set ip port
+        
 
         //create socket
         ret = listen_fd = socket(AF_INET,SOCK_STREAM,0);

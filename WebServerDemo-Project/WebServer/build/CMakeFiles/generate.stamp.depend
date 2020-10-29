@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/CMakeCXXInformation.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/CMakeGenericSystem.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/CMakeRCInformation.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/Compiler/MSVC-CXX.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/Platform/Windows-MSVC.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/Platform/Windows.cmake
+C:/Temp/cmake-3.18.4-win64-x64/share/cmake-3.18/Modules/Platform/WindowsPaths.cmake
+C:/Users/yings/Desktop/StudySpace/WebServer/CMakeLists.txt
+C:/Users/yings/Desktop/StudySpace/WebServer/build/CMakeFiles/3.18.4/CMakeCXXCompiler.cmake
+C:/Users/yings/Desktop/StudySpace/WebServer/build/CMakeFiles/3.18.4/CMakeRCCompiler.cmake
+C:/Users/yings/Desktop/StudySpace/WebServer/build/CMakeFiles/3.18.4/CMakeSystem.cmake

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yings/Desktop/StudySpace/WebServer/WebServer/tests
+# Install script for directory: C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/WebServer/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

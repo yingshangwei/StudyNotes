@@ -4,48 +4,48 @@
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|win32">
+    <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
-      <Platform>win32</Platform>
+      <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|win32">
+    <ProjectConfiguration Include="Release|x64">
       <Configuration>Release</Configuration>
-      <Platform>win32</Platform>
+      <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="MinSizeRel|win32">
+    <ProjectConfiguration Include="MinSizeRel|x64">
       <Configuration>MinSizeRel</Configuration>
-      <Platform>win32</Platform>
+      <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="RelWithDebInfo|win32">
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
       <Configuration>RelWithDebInfo</Configuration>
-      <Platform>win32</Platform>
+      <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C14ACB94-1EC8-3830-AC13-295CF01B2605}</ProjectGuid>
+    <ProjectGuid>{82EC63EF-E04E-371D-871B-EEA2A6949F31}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
-    <Platform>win32</Platform>
+    <Platform>x64</Platform>
     <ProjectName>WebServer</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
@@ -59,41 +59,41 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\yings\Desktop\StudySpace\WebServer\build\WebServer\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">WebServer.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">WebServer</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.exe</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\yings\Desktop\StudySpace\WebServer\build\WebServer\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">WebServer.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">WebServer</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.exe</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkIncremental>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\yings\Desktop\StudySpace\WebServer\build\WebServer\MinSizeRel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">WebServer.dir\MinSizeRel\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">WebServer</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.exe</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkIncremental>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\yings\Desktop\StudySpace\WebServer\build\WebServer\RelWithDebInfo\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">WebServer.dir\RelWithDebInfo\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">WebServer</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.exe</TargetExt>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</LinkIncremental>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\build\WebServer\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WebServer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WebServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\build\WebServer\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WebServer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">WebServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\build\WebServer\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">WebServer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">WebServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\build\WebServer\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">WebServer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">WebServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -g -Wno-unused-parameter -O0</AdditionalOptions>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
       <CppLanguageStandard>c++11</CppLanguageStandard>
       <ExceptionHandling>
       </ExceptionHandling>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <UseFullPaths>false</UseFullPaths>
       <WarningLevel>EnableAllWarnings</WarningLevel>
       <PreprocessorDefinitions>_PTHREADS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -102,10 +102,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_PTHREADS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -115,27 +115,27 @@
     <Link>
       <AdditionalDependencies>base\Debug\server_base.lib;pthread.lib;rt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/Debug/WebServer.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/Debug/WebServer.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/Debug/WebServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/Debug/WebServer.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -g -Wno-unused-parameter -O0</AdditionalOptions>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
       <CppLanguageStandard>c++11</CppLanguageStandard>
       <ExceptionHandling>
       </ExceptionHandling>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <UseFullPaths>false</UseFullPaths>
       <WarningLevel>EnableAllWarnings</WarningLevel>
       <PreprocessorDefinitions>_PTHREADS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -144,10 +144,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_PTHREADS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -157,22 +157,23 @@
     <Link>
       <AdditionalDependencies>base\Release\server_base.lib;pthread.lib;rt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/Release/WebServer.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/Release/WebServer.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/Release/WebServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/Release/WebServer.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -g -Wno-unused-parameter</AdditionalOptions>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
       <CppLanguageStandard>c++11</CppLanguageStandard>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -180,7 +181,6 @@
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <UseFullPaths>false</UseFullPaths>
       <WarningLevel>EnableAllWarnings</WarningLevel>
       <PreprocessorDefinitions>_PTHREADS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -189,10 +189,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_PTHREADS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -202,22 +202,23 @@
     <Link>
       <AdditionalDependencies>base\MinSizeRel\server_base.lib;pthread.lib;rt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/MinSizeRel/WebServer.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/MinSizeRel/WebServer.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/MinSizeRel/WebServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/MinSizeRel/WebServer.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -g -Wno-unused-parameter</AdditionalOptions>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
       <CppLanguageStandard>c++11</CppLanguageStandard>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
@@ -226,17 +227,16 @@
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <UseFullPaths>false</UseFullPaths>
       <WarningLevel>EnableAllWarnings</WarningLevel>
       <PreprocessorDefinitions>_PTHREADS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_PTHREADS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\yings\Desktop\StudySpace\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -246,11 +246,11 @@
     <Link>
       <AdditionalDependencies>base\RelWithDebInfo\server_base.lib;pthread.lib;rt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/RelWithDebInfo/WebServer.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/RelWithDebInfo/WebServer.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/RelWithDebInfo/WebServer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/RelWithDebInfo/WebServer.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -258,10 +258,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/yings/Desktop/StudySpace/WebServer/WebServer/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
-C:\Temp\cmake-3.18.4-win64-x64\bin\cmake.exe -SC:/Users/yings/Desktop/StudySpace/WebServer -BC:/Users/yings/Desktop/StudySpace/WebServer/build --check-stamp-file C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/CMakeFiles/generate.stamp
+    <CustomBuild Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/WebServer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Hc:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer -Bc:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build --check-stamp-file C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -269,12 +269,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\yings\Desktop\StudySpace\WebServer\build\WebServer\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/yings/Desktop/StudySpace/WebServer/WebServer/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
-C:\Temp\cmake-3.18.4-win64-x64\bin\cmake.exe -SC:/Users/yings/Desktop/StudySpace/WebServer -BC:/Users/yings/Desktop/StudySpace/WebServer/build --check-stamp-file C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/CMakeFiles/generate.stamp
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/WebServer/CMakeLists.txt;C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\CMakeLists.txt;C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\build\WebServer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/WebServer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Hc:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer -Bc:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build --check-stamp-file C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -282,12 +282,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\yings\Desktop\StudySpace\WebServer\build\WebServer\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/yings/Desktop/StudySpace/WebServer/WebServer/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
-C:\Temp\cmake-3.18.4-win64-x64\bin\cmake.exe -SC:/Users/yings/Desktop/StudySpace/WebServer -BC:/Users/yings/Desktop/StudySpace/WebServer/build --check-stamp-file C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/CMakeFiles/generate.stamp
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/WebServer/CMakeLists.txt;C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\CMakeLists.txt;C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\build\WebServer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/WebServer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Hc:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer -Bc:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build --check-stamp-file C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -295,12 +295,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\yings\Desktop\StudySpace\WebServer\build\WebServer\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/yings/Desktop/StudySpace/WebServer/WebServer/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
-C:\Temp\cmake-3.18.4-win64-x64\bin\cmake.exe -SC:/Users/yings/Desktop/StudySpace/WebServer -BC:/Users/yings/Desktop/StudySpace/WebServer/build --check-stamp-file C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/CMakeFiles/generate.stamp
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/WebServer/CMakeLists.txt;C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\CMakeLists.txt;C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\build\WebServer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/WebServer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Hc:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer -Bc:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build --check-stamp-file C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -308,32 +308,30 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\yings\Desktop\StudySpace\WebServer\build\WebServer\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/WebServer/CMakeLists.txt;C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\CMakeLists.txt;C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\build\WebServer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\Channel.cpp" />
-    <ClCompile Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\Epoll.cpp" />
-    <ClCompile Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\EventLoop.cpp" />
-    <ClCompile Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\EventLoopThread.cpp" />
-    <ClCompile Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\EventLoopThreadPool.cpp" />
-    <ClCompile Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\HttpData.cpp" />
-    <ClCompile Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\Main.cpp" />
-    <ClCompile Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\Server.cpp" />
-    <ClCompile Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\Timer.cpp" />
-    <ClCompile Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\Util.cpp" />
+    <ClCompile Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\Channel.cpp" />
+    <ClCompile Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\Epoll.cpp" />
+    <ClCompile Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\EventLoop.cpp" />
+    <ClCompile Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\EventLoopThread.cpp" />
+    <ClCompile Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\EventLoopThreadPool.cpp" />
+    <ClCompile Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\HttpData.cpp" />
+    <ClCompile Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\Main.cpp" />
+    <ClCompile Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\Server.cpp" />
+    <ClCompile Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\Timer.cpp" />
+    <ClCompile Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\Util.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\yings\Desktop\StudySpace\WebServer\build\ZERO_CHECK.vcxproj">
-      <Project>{E6B3FECF-879F-3962-B0FE-523A844C965D}</Project>
+    <ProjectReference Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\build\ZERO_CHECK.vcxproj">
+      <Project>{D5B8479C-4A68-3086-A2A0-795BC2F8B856}</Project>
       <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\yings\Desktop\StudySpace\WebServer\build\WebServer\base\libserver_base.vcxproj">
-      <Project>{CBF7E02A-871D-3143-834F-709F4BD92C59}</Project>
+    <ProjectReference Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\build\WebServer\base\libserver_base.vcxproj">
+      <Project>{1E54190E-3401-30D8-9433-978E5A305CBF}</Project>
       <Name>libserver_base</Name>
     </ProjectReference>
   </ItemGroup>

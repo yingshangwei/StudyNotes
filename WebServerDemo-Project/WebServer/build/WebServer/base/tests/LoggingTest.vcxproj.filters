@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\base\tests\LoggingTest.cpp">
+    <ClCompile Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\base\tests\LoggingTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\yings\Desktop\StudySpace\WebServer\WebServer\base\tests\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\yswdra\Desktop\StudyNotes\WebServerDemo-Project\WebServer\WebServer\base\tests\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{5DE88A44-54FF-320E-99B8-F555C0D74842}</UniqueIdentifier>
+      <UniqueIdentifier>{2D46CF9E-5640-3F34-98E3-AE54BB1CA967}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

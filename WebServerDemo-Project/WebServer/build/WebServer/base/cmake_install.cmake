@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/yings/Desktop/StudySpace/WebServer/WebServer/base
+# Install script for directory: C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/WebServer/base
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/yings/Desktop/StudySpace/WebServer/build/WebServer/base/tests/cmake_install.cmake")
+  include("C:/Users/yswdra/Desktop/StudyNotes/WebServerDemo-Project/WebServer/build/WebServer/base/tests/cmake_install.cmake")
 
 endif()
 

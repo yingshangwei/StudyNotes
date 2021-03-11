@@ -18,16 +18,19 @@
 #include <queue>
 using namespace std;
 
-#define ERRNP(s) fprintf(stderr, "%s error %s errno : %d\n", s,strerror(errno), errno)
-#define ERRP(s) fprintf(stderr, "%s error\n", s)
+namespace NetWork {
+    #define ERRNP(s) fprintf(stderr, "%s error %s errno : %d\n", s,strerror(errno), errno)
+    #define ERRP(s) fprintf(stderr, "%s error\n", s)
 
-#define MAXBUFF 4096
-#define MAXEVENTS 64
-#define MAXLISTENFD 1024
+    #define MAXBUFF 4096
+    #define MAXEVENTS 64
+    #define MAXLISTENFD 1024
 
 
-//#define NEEDPLAYER 1
+    //#define NEEDPLAYER 1
 
-const int server_ip_port = 10009;//server uses port
+    const int server_ip_port = 10009;//server uses port
 
-int InfSyn();//information synchronization to each login client
+    int InfSyn();//information synchronization to each login client
+}
+

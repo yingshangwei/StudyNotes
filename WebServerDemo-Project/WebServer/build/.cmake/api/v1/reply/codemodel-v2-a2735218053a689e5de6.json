@@ -1,0 +1,152 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "WebServer",
+					"childIndexes" : 
+					[
+						2,
+						4
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "WebServer",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "WebServer/base",
+					"childIndexes" : 
+					[
+						3
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "WebServer/base",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "WebServer/base/tests",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "WebServer/base/tests",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "WebServer/tests",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "WebServer/tests",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "WebServer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "HTTPClient::@db73784bfb6252a8a93b",
+					"jsonFile" : "target-HTTPClient-Debug-5405f5564ae6d7d1865f.json",
+					"name" : "HTTPClient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "LoggingTest::@39786a75b0bd06075437",
+					"jsonFile" : "target-LoggingTest-Debug-efd0f3a6d0eb38d2e109.json",
+					"name" : "LoggingTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "WebServer::@dbf45654fd97f6e599d0",
+					"jsonFile" : "target-WebServer-Debug-19de731cd3f5ce1d7db4.json",
+					"name" : "WebServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "libserver_base::@5a67b0a44b3e32255f64",
+					"jsonFile" : "target-libserver_base-Debug-f0f86e124f8215924f98.json",
+					"name" : "libserver_base",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/c/Users/Admin/Desktop/Git/StudyNotes/WebServerDemo-Project/WebServer/build",
+		"source" : "/mnt/c/Users/Admin/Desktop/Git/StudyNotes/WebServerDemo-Project/WebServer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

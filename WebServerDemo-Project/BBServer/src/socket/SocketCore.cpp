@@ -21,6 +21,8 @@ namespace NetWork {
         int count() { return bCount; }
         //get capacity of buffer
         int capacity() { return bCapacity; }
+        int getDataPtr() { return *bBuff; }
+        void setCount(int nbCount) { bCount = nbCount; }
         //append data to the tail of buffer array
         int appendData(char* dataptr, int n) {
             if(n <= 0 ) return 0;
@@ -28,6 +30,9 @@ namespace NetWork {
             memcpy(bBuff+bCount,dataptr,res);
             bCount += res;
             return res;
+        }
+        ~Buffer() { 
+            delete[] bBuff;
         }
     private:
         int bCount;//now store char count
@@ -49,11 +54,18 @@ namespace NetWork {
         int fd;
 
         Client() : ip(""), fd(-1) {}
-        Client(string nip, int nport, int nfd) : ip(nip), port(nport), fd(nfd) {}
+        Client(string nip, int nport, int nfd) 
+            : ip(nip), port(nport), fd(nfd) {}
         bool isValid() {
             if(!buffer.isValid()) { return false; }
         }
-    private:
+        int inputData(char* dataPtr, int count) {
+            int ret = buffer.appendData(dataPtr,count);
+
+
+            return ret;
+        }
+    protected:
         Buffer buffer;
     };
 
@@ -167,8 +179,7 @@ namespace NetWork {
                     ERRNP("wait event i");
                     close(fd);
                     continue;
-                }
-                else if(listen_fd == fd) {//new conn request
+                } else if(listen_fd == fd) {//new conn request
                     struct sockaddr client_addr;
                     socklen_t client_addr_len = sizeof(client_addr);
                     
@@ -213,8 +224,7 @@ namespace NetWork {
                     }
                     fd2client[new_conn_fd] = client;
                     cout << "new client connect" << endl;
-                }
-                else {
+                } else {
                     //if now fd no buff   give it a buff
                     // if(fd_buff.find(fd) == fd_buff.end()) {
                     // // FdBuff temp;
@@ -225,6 +235,26 @@ namespace NetWork {
 
                     //引用类型指向map中的对应fd
                     // FdBuff& t = fd_buff[fd];
+
+                    ret = recv_len = recv(fd,buff,MAXBUFF,MSG_DONTWAIT);
+                    if(ret==0) {
+                        CloseFdP(fd,"socket close");
+                        continue;
+                    }
+                    if(ret < 0) {
+                        ERRNP("recv msg");
+                        close(fd);
+                        continue;
+                    }
+                    
+                    int ret = fd2client[fd]->inputData(buff,recv_len);
+                    if(ret==0) {
+                        ERRP("socket close");
+                        close(fd);
+                        continue;
+                    }
+
+
 
                     if(t.count<HEADLEN) {
                         ret = recv_len = recv(fd,t.buff+t.count,HEADLEN-t.count,MSG_DONTWAIT);
@@ -240,8 +270,7 @@ namespace NetWork {
                         }
 
                         t.count += recv_len;
-                    }
-                    else {
+                    } else {
                         int datalen;
                         ret = datalen = GetDatalen(t.buff[1],t.buff[2]);
                         if(ret < 0) {
@@ -283,11 +312,17 @@ namespace NetWork {
 
         }
 
-        int CloseFd(int fd) {
-            if(fd_buff.find(fd)!=fd_buff.end()) {
-            fd_buff.erase(fd_buff.find(fd));
-            close(fd);    
-            }
+        int CloseFdP(int fd, char* msg) {
+            auto it = fd2client.find(fd);
+            if(it!=fd2client.end()) { fd2client.erase(it); }
+            ERRP(msg);
+            return close(fd);
+        }
+        int CloseFdNP(int fd, char* msg) {
+            auto it = fd2client.find(fd);
+            if(it!=fd2client.end()) { fd2client.erase(it); }
+            ERRNP(msg);
+            return close(fd);
         }
 
         //send msg stream to fd, buff is msg stream, len is length of msg stream

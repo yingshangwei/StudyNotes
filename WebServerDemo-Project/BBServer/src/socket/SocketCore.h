@@ -16,6 +16,7 @@
 #include <set>
 #include <fstream>
 #include <queue>
+#include <memory>
 using namespace std;
 
 namespace NetWork {

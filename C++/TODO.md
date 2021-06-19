@@ -1,2 +1,6 @@
 - [ ] 了解 https://abseil.io/tips/61  https://abseil.io/tips/146  https://abseil.io/tips/88
 - [ ] C++类的 拷贝和赋值操作的性质，这个不是很清楚
+- [ ] C++ const 相关，包括函数返回值是const、参数是const、函数是const得一些概念
+- [ ] C++ 函数返回值是引用和右值引用的概念
+- [ ] MDSF：产生式编程（Generative Programming）学习  https://www.cnblogs.com/zhoujg/archive/2010/09/28/1837256.html （用词比较术语话，需要研读）
+- [ ] 怪异得循环模板模式（CRTP）学习

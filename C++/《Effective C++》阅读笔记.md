@@ -205,7 +205,7 @@ private :
 
 - delete函数接收到null指针的时候应是啥也不做。
 
-#### 条款52：写了 placement new 也要写 placement delete
+#### 条款52：写了 placement new 也要写 placement delete（TODO：修改，理解可能有问题）
 
 - 简单说重写的new和重写的delete应该要成对存在，尤其是包含额外参数的时候。 如果自定义new中包含额外参数，而未给出包含同样额外参数的delete函数，就会出现内存泄漏的问题。如下形式：
 

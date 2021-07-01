@@ -1,31 +1,3 @@
-### 阅读暂存
-
-#### 第一章
-
-![image-20210629155928173](../datas/images/image-20210629155928173.png)
-
-
-
-![image-20210629161016646](../datas/images/image-20210629161016646.png)
-
-![image-20210630141239922](../datas/images/image-20210630141239922.png)
-
-
-
-#### 第二章
-
-![image-20210630150638594](../datas/images/image-20210630150638594.png)
-
-![image-20210630151034723](../datas/images/image-20210630151034723.png)
-
-![image-20210630151953506](../datas/images/image-20210630151953506.png)
-
-![image-20210630152617578](../datas/images/image-20210630152617578.png)
-
-![image-20210630153620906](../datas/images/image-20210630153620906.png)
-
-![image-20210630164738169](../datas/images/image-20210630164738169.png)
-
 ### 第1章 关于对象
 
 - C++中，struct 和 class 在使用上没什么区别，但是从内涵层面（哲学...）讲，struct表示一组结构化的数据，而class怎么表示一个抽象对象，很显然，两者所表示的不是同一东西。
@@ -55,4 +27,95 @@
 
 ### 第2章 构造函数语意学
 
+- 如果一个class没有任何的constructor，那么当constructor真正需要被用到的时候，编译器会自动合成这么一个default constructor。
+
+  这里需要关注 “真正需要用到的时候” 这一点，
+
+  - 显然的意思就是，你不使用这个class实例化对象那肯定是用不到，也就没必要构造；
+  - 其次，就是数据成员（包括继承而来的）中有default constructor（不管是class作者自己定义还是编译器合成的）或者有虚函数（包括继承而来的）又或是继承串中有虚继承，有上述特性的类在默认构造时需要合成default constructor。而除上述之外的class，显然，没必要用构造函数去初始化（class作者自己都不操作，编译器操作图啥呢？
+    - 简单解释一下上述，存在含有default constructor的data member，就需要调用它们的default constructor 函数，就需要安排调用代码，因此需要合成；
+    - 而对于有虚函数的类，因为对于实例化的对象，指向虚函数表的指针内容一定要真确，也就是必须被初始化，那么就需要特定代码被调用，因此也会合成一份default constrcutor用来安插初始化vptr的代码；
+    - 对于有虚父类的类，其内部也存在着一份维护访问虚父类数据的数据（存在意义和vptr虚函数表指针一样，编译器无法知道实际需要访问的数据的偏移量，只能通过间接方式固定访问方式），因此，同有虚函数的类一样，也需要合成一份default constructor
+
+  为防止在不同编译模块合成出多个default constructor，由编译器合成的default constructor（copy constructor、destructor、assignment copy operator同理）都是以inline方式完成，若函数过于复杂不适合用inline实现，那么就会合成一个explicit non-inline static 实体。（TODO::这里默认使用inline实现会不会造成一定代码膨胀，是不是可以理解为，用户自定义更有优势？）
+
+- 对于class作者已经设定有constructor的情况（不管是不是default constructor），编译器都不会再合成default constructor，而是将需要初始化的数据的初始化代码置于所有的constructor的user-code用户代码的上面，初始化顺序按照data member的定义顺序来。
+
+  这里有一点需要注意，**initialization list**其实目的是为了指定需要初始化的data member的初始化参数，并不会影响初始化顺序。
+
+- 有三种情况会以一个object为另一个object的初值而调用copy constructor，如下：
+
+  ```c++
+  class A {...}
+  A a;
+  A x = a;       					//直接赋值
+  void f(A t) { ... }
+  f(a);          					//作为函数的实参调用
+  A g() { A t; ... ; return t; }  //作为函数的返回值
+  ```
+
+  上述情况下对copy constructor的调用，由于编译器的优化，可能会导致临时object的产生或者程序代码的蜕变（或者两者都有）
+
+- 如果不存在default copy constructor，编译器合成的思路同default constructor
+
+  default constructor的不合成的操作时啥也不干，而default copy constructor不合成的操作则是bitwise copy
+
+- 在copy structor中使用memset、memcpy的操作时，一定要注意避免修改vptr，因为vptr的初始化代码会由编译器合成置于user-code上面。
+
+- 小知识：在严谨的C++用词中，“定义”是指“占用内存“的行为
+
+- 将一个object作为一个函数的参数时，编译器可能会又两种策略：
+
+  ```c++
+  A a;
+  f(a);
+  ```
+
+  - 第一种，先生成一个临时object，调用copy constructor以传入实参为初始值，然后再函数内操作这个临时object，这个策略还会改变程序的代码形式，会将                                            									`void f(A a) => void f(A &a)`
+  - 第二种，直接拷贝构建，对参数实际在函数栈中的位置直接用实参值拷贝构建
+
+- 函数返回一个object时，有一种策略是，为函数`A f()` 添加额外参数 `void f(A& __result)` 也就是将返回操作用引用的形式顶替，在原来的return前调用copy constructor初始化 __result，并且另原来的return不返回值。
+
+- 若对于所有的 `A f()` 都return一个具名数值，那么对于上一条，编译器可以做这样的优化，代码如下：
+
+  ```c++
+  A f() {       //原函数
+      A t;
+      ... //操作
+      return t;
+  }
+  void f(A& __result) {  //编译器改写后操作
+      A t;
+      ... //操作
+      __result.A::A(t);
+      return;
+  }
+  void f(A& __result) {  //施加NRV优化后，显然，少了一次default constructor
+      __result.A::A();
+      ... //直接操作__result
+      return;
+  }
+  ```
+
+  这里值得注意的是，由于优化的存在，导致程序的执行逻辑会和自己所设想的不一致，例如这一段代码 `A a = f();` 一般都会认为a是由copy constructor初始化而来，然而NRV优化会将其变成如下代码：
+
+  ```c++
+  A a;
+  f(a);  //void f(A& __result);
+         //显然...这里没了copy constructor操作，假若自定义的copy constructor中有什么
+         //必须执行到的关键操作，那么这边就会出现问题了，毕竟你会认为copy constructor调用
+         //了
+  ```
+
+  (TODO::没搞懂为什么使用NRV优化还需要explicit copy constructor? 很奇怪，明明开启NRV优化后省去了一步copy constructor)
+
+- 使用member initialization list最大的好处就是能省去几步操作，至少不使用initialization list进行初始化操作而使用赋值操作的化，至少会多一个赋值操作的调用，可能还会产生一个临时对象之后再destructor。显然，使用member initialization list效率会更高。（还会避免一些奇怪赋值带来的奇怪问题？）
+
+  这里还是得再强调一下，初始化顺序是按照声明顺序来的，基类在先！
+
+- 小小感悟：真的是十分有意思得一节内容啊，感觉对以后构建对象得操作会有帮助，会思考得更细致，不过感觉这更多还是思路，毕竟各家编译器不一样，而且，随着时代进步也会更加不同，当然，最重要的是举一反三嘛！
+
+### 第3章 Data语意学
+
 - 
+

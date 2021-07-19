@@ -5,3 +5,4 @@
 - [ ] MDSF：产生式编程（Generative Programming）学习  https://www.cnblogs.com/zhoujg/archive/2010/09/28/1837256.html （用词比较术语话，需要研读）
 - [ ] 怪异得循环模板模式（CRTP）学习
 - [ ] 类内虚函数可以是inline函数吗，限制以及条件又是什么？
+- [ ] 父类没有虚函数，怎么判定父类指针指向父类还是子类对象？编译器是如何判定的？

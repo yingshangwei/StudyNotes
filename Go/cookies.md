@@ -1,0 +1,1 @@
+- struct{} 不占空间，分配器返回一个 zerobase 的地址
